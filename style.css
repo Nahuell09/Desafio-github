@@ -8,20 +8,28 @@
 html {
     font-size: 10px;
 }
+
 /* Fondo de pagina */
 .fondo {
     background-color: #fff;
 }
 /* Fin fondo de pagina */
-header {
-    display: flex;
-}
+
 /*Tamaño logo*/
 .image {
     width: 10%;
 }
 /*Fin logo*/
 
+/* Header-secciones */
+header {
+    display: flex;
+}
+
+.inicios {
+    text-decoration: none;
+    color: black;
+}
 
 .padre{
     display:flex;
@@ -29,7 +37,6 @@ header {
     flex-direction: column;
     background-color:  rgba(46, 204, 113 , .33);
 }
-
 
 .beneficios{
         display:flex;
@@ -53,8 +60,7 @@ header {
     margin: 0 15px;
     margin-bottom: 50px;
 }
-
-/* inicio */
+/* fin header */
 
 /* Fuente encabezado */
 .container-encabezado {
@@ -71,13 +77,11 @@ header {
     background-color: #2ECC71;
     padding: 4%;
 }
+
 .encabezado li {
     margin: 10px;
 }
-.inicios {
-    text-decoration: none;
-    color: black;
-}
+
 /* Fuente de Inicio */
 .detalle {
     display: flex;
@@ -91,6 +95,7 @@ header {
     font-size: 1.5em;
 }
 /* Fin de la fuente */
+
 /* Producto */
 .letra {
     font-weight: bold;
@@ -110,6 +115,7 @@ header {
     height: 250px;
 }
 /* Fin producto */
+
 /* Promociones */
 .promocio1 {
     width: 90%;
@@ -121,6 +127,7 @@ header {
     width: 90%;
 }
 /* Fin promocion */
+
 /* footer */
 .parent {
     display: grid;
@@ -153,6 +160,7 @@ header {
 .envio-color {
     background-color: #fff;
 }
+
 /* Medios de pago y envios */
 .visa {
     width: 50%;
@@ -187,6 +195,7 @@ header {
 .correo {
     width: 40%;
 }
+
 /* Contacto */
 .color {
     display: flex;
@@ -203,4 +212,4 @@ header {
     width: 10%;
 }
 /* Fin contacto */
-
+/* fin footer */
