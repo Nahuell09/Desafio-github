@@ -11,13 +11,14 @@ html {
 
 /* Fondo de pagina */
 .fondo {
-    background-color: #fff;
+    background-color: #E5E8E8;
 }
 /* Fin fondo de pagina */
 
 /*Tamaño logo*/
 .image {
     width: 10%;
+    height: auto;
 }
 /*Fin logo*/
 
