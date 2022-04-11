@@ -94,6 +94,7 @@ header {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5em;
+    list-style: none;
 }
 /* Fin de la fuente */
 
@@ -204,13 +205,16 @@ header {
     list-style: none;
 }
 .facebook {
-    width: 10%;
+    width: 20%;
 }
 .instagram {
-    width: 10%;
+    width: 20%;
 }
 .whatsapp { 
-    width: 10%;
+    width: 20%;
 }
 /* Fin contacto */
 /* fin footer */
+
+
+
