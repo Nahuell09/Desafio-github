@@ -4,6 +4,38 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+.bg-arreglo {
+    display: flex;
+    justify-content: center;
+    background-color: #2ECC71;
+}
+
+.card {
+    background: linear-gradient(145deg, #92918ff8, #ffffff);
+    box-shadow: 9.91px 9.91px 15px #d1d2d3, -9.91px -9.91px 15px #fff;
+}
+
+.unidades {
+    color: #53e08e;
+}
+
+button, input, optgroup, select, textarea {
+    font-size: inherit;
+    line-height: inherit;
+    font-size: 1.5rem;
+}
+
+.cantidad  {
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 20%;
+    border: 2px solid #aaa;
+    border-radius: 10%;
+}
+
 /* Letra tamaño */
 html {
     font-size: 10px;
@@ -11,7 +43,7 @@ html {
 
 /* Fondo de pagina */
 .fondo {
-    background-color: #E5E8E8;
+    background-color: rgba(231, 244, 235);
 }
 /* Fin fondo de pagina */
 
@@ -35,6 +67,7 @@ header nav ul li:hover {
 }
 
 header {
+    background-color: #2ECC71;
     display: flex;
 }
 
@@ -86,27 +119,21 @@ header {
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2rem;
-    background-color: #2ECC71;
-    padding: 4%;
+    padding: 3%;
 }
 
 .encabezado li {
     margin: 10px;
 }
 
-/* Fuente de Inicio */
+
 .detalle {
     display: flex;
     flex-direction: row-reverse;
 }
 
+/* Fuente de Inicio */
 
-.principal {
-    font-weight: bold;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-}
 /* Fin de la fuente */
 
 /* Producto */
@@ -141,21 +168,43 @@ header {
 }
 /* Fin promocion */
 
+/* Seccion Ubicacion */
+#ubicacion {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.principal {
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    }
 /* footer */
 .parent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     width: 100%;
     background-color: #2ECC71;
 }
 .div2 {
     align-self: flex-end;
     justify-self: end;
-    width: 100px;
+    width: 155px;
+    text-decoration: none;
+    color: black;
 }
+
+.div2 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
 .div2 ul li {
+    display: flex;
+    justify-content: space-around;
     width: 100px;
+    font-size: 2.5rem;
 }
 .div2 ul {
     display: flex;
@@ -170,13 +219,12 @@ header {
     justify-content: center;
 }
 .medio-pago {
+    font-weight: 600;
     font-size: 1.5rem;
 }
 .medio-envio {
+    font-weight: 600;
     font-size: 1.5rem;
-}
-.redes {
-    font-size: 2rem;
 }
 .envio-color {
     background-color: #fff;
@@ -184,39 +232,70 @@ header {
 
 /* Medios de pago y envios */
 .visa {
-    width: 50%;
-    height: 70%;
+    width: auto;
+    height: 25px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .mastercard {
-    width: 50%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .mercadopago {
-    width: 50%;
+    width: auto;
+    height: 45px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .naranja {
-    width: 80%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .cencosud {
-    width: 50%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .nativa {
-    width: 100%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .pago-facil {
-    width: 50%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .rapipago {
-    width: 50%;
+    width: auto;
+    height: 45px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .oca {
-    width: 100%;
+    width: auto;
+    height: 65px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .andreani {
-    width: 40%;
+    width: auto;
+    height: 55px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 .correo {
-    width: 40%;
-    height: 80%;
+    width: auto;
+    height: 55px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
 
 /* Contacto */
@@ -226,13 +305,13 @@ header {
     list-style: none;
 }
 .facebook {
-    width: 20%;
+    width: 35%;
 }
 .instagram {
-    width: 20%;
+    width: 35%;
 }
 .whatsapp { 
-    width: 20%;
+    width: 35%;
 }
 /* Fin contacto */
 /* fin footer */
@@ -291,7 +370,7 @@ header {
     border: none;
     padding: .7em 0;
 }
-
+/* Fin contacto */
 
 /* Media query */
 /* @media screen and (max-width: 800px) {
@@ -305,3 +384,6 @@ header {
         justify-content: center;
     }
 } */
+
+
+
