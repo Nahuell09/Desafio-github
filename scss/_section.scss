@@ -1,0 +1,51 @@
+/* Section */
+.detalle {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.padre{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:  rgba(46, 204, 113 , .33);
+    width: 70%;
+}
+.beneficios{
+    display:flex;
+    align-content:flex-start;
+    justify-content: center;
+    width: 95%;
+    font-style: italic;
+    font-size: 4.5rem;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 50px;
+    background-color: #53e08e;
+    border:2px solid white;
+    border-radius: 22px;
+    padding: 10px;
+}
+.parr{
+    text-align:center;
+    font-size: 18px;
+    margin: 0 15px;
+    margin-bottom: 50px;
+}
+.inicio {
+    width: 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1024px) {
+        .detalle {
+            flex-direction: column;
+        }
+        .padre {
+            width: 100%;
+        }
+        .inicio {
+            display: none;
+        }
+    }
+}
