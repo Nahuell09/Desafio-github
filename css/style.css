@@ -241,6 +241,17 @@ footer {
 .div2 ul li a {
   text-decoration: none;
   color: black;
+}
+
+.facebook {
+  width: 35%;
+}
+
+.instagram {
+  width: 35%;
+}
+
+.whatsapp {
   width: 35%;
 }
 
