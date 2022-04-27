@@ -1,7 +1,6 @@
 /* Header */
 header {
     background-color: #2ECC71;
-    display: flex;
 
     nav {
         ul {
@@ -19,14 +18,18 @@ header {
     }
 }
 .container-logo {
-    width: 200px;
+    display: flex;
 }
 .image {
-    width: 100%;
+    width: 10%;
     height: auto;
 }
 .container-encabezado {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: inherit;
 }
 .encabezado {
     display: flex;
