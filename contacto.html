@@ -8,22 +8,148 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Contacto</title>
 </head>
-<body class="body-contacto">
-
-
-<form action="" class="form" action="https://formspree.io/f/xjvlayjy"
-method="POST">
-    <div class="form_container">
-        <h2 class="form_title">Contáctame</h2>
-        <input type="text" class="form_input" placeholder="Nombre" name="name">
-        <input type="email" class="form_input" placeholder="Email" name="email">
-        <textarea name="form_input form_input--message" placeholder="Mensaje" name="message"></textarea>
-
-
-        <input type="submit" value="Enviar" class="form__cta">
-    </div>
-</form>
-
-
-</body>
+<body class="fondo-formulario">
+    <!-- Header -->
+    <header>
+        <div class="container-logo">
+            <img src="Imagen/logo.jpg" alt="logo de la Pagina"
+            class="image">
+            <nav class="container-encabezado">
+                <ul class="encabezado">
+                    <li>
+                        <a class="inicios" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="inicios" href="index.html#productos">Productos</a>
+                    </li>
+                    <li>
+                        <a class="inicios" href="promociones.html">Promociones</a>
+                    </li>
+                    <li>
+                        <a class="inicios" href="index.html#ubicacion">Ubicacion</a>
+                    </li>
+                    <li>
+                        <a class="inicios" href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="inicios" href="usuario.html">Iniciar Sesion</a>
+                    </li>
+                    <li>
+                        <a class="inicios" href="crear-usuario.html">Crear Cuenta</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Fin Header -->
+    
+            <section class="speaker-form-header">
+                <h1>Contactame</h1>
+                <p><em>¿Quieres hablar con nosotros?</em></p>
+            </section>
+    
+    
+    
+        <form action="form.php" method="POST" class="speaker-form">
+            <div class="form-row">
+                <label for="full-name">Name</label>
+                <input type="text" id="full-name" placeholder="Nombre" name="nombre" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Correo" name="email" required> 
+            </div>
+    
+            <fieldset class="legacy_form-row">
+                <legend>Tipo de charla</legend>
+                <input type="radio" name="talk-type" id="talk-type-1">
+                <label for="talk-type-1" class="radio-label">Contactarme</label>
+    
+                <input type="radio" name="talk-type" id="talk-type-2" checked>
+                <label for="talk-type-2" class="radio-label">Quejas</label>
+            </fieldset>
+    
+            <div class="form-row">
+                <label for="abstract">Area de texto</label>
+                <textarea name="textarea" id="abstract"></textarea>
+                <p class="instructions">Describe tu charla en 500 palabras o menos</p>
+            </div>
+    
+            <div class="form-row">
+                <button type="submit">Submit</button>
+            </div>
+    
+        </form>
+    
+    <!-- Contacto -->
+    <footer>
+        <div class="parent">
+            <div class="div1">
+                <h4 class="medio-pago">
+                    Medios de pago
+                </h4>
+                <ul class="color"> 
+                    <li class="envio-color">
+                        <img src="Imagen/visa.png" alt="visa" class="visa">
+                    </li>
+                        <li class="envio-color">
+                        <img src="Imagen/Mastercard.png" alt="mastercard" class="mastercard">
+                    </li>
+                        <li class="envio-color"> 
+                        <img src="Imagen/mercado-p.jpg" alt="mercadopago" class="mercadopago">
+                    </li>
+                        <li class="envio-color">
+                        <img src="Imagen/Naranja.png" alt="naranja" class="naranja">
+                    </li>
+                        <li class="envio-color">
+                        <img src="Imagen/Cencosud.png" alt="cencosud" class="cencosud">
+                    </li>
+                        <li class="envio-color">
+                        <img src="Imagen/nativa.png" alt="nativa" class="nativa">
+                    </li>
+                        <li class="envio-color">
+                        <img src="Imagen/rapipago.png" alt="rapipago" class="rapipago">
+                    </li>
+                </ul>
+            </div>
+            <div class="div2">
+                <ul class="color"> 
+                    <li class="redes">
+                        <a href="https://www.facebook.com/">Facebook</a>
+                        <img src="Imagen/facebook.png" alt="facebook" class="facebook">
+                    </li>
+                    <li class="redes">
+                        <a href="https://www.instagram.com/">Instagram</a>
+                        <img src="Imagen/instagramn.webp" alt="instagram" class="instagram">
+                    </li>
+                    <li class="redes">
+                        <a href="https://web.whatsapp.com/">Whatsapp</a>
+                        <img src="Imagen/whatsapp.webp" alt="whatsapp" class="whatsapp">
+                    </li>
+                </ul>
+            </div>
+            <div class="div3">
+                <h4 class="medio-envio">
+                    Medios de envío 
+                </h4>
+                <ul class="color"> 
+                    <li class="envio-color">
+                        <img src="Imagen/oca.png" alt="oca" class="oca">
+                    </li>
+                        <li class="envio-color">
+                        <img src="Imagen/andreani.svg" alt="andreani" class="andreani">
+                    </li>
+                        <li class="envio-color">
+                        <img src="Imagen/correo.png" alt="correo-argentino" class="correo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- fin contacto -->
+    
+    
+    
+    
+    </body>
 </html>
