@@ -6,12 +6,13 @@ header {
         ul {
             li {
                 padding: 8px 12px;
-                border-radius: 5px;
 
                 :hover{
                     background-color: #00f365;
-                    transition: 1s;
-                    font-size: 1.5rem;
+                    transition: 1.5s;
+                    font-size: 2.5rem;
+                    border-radius: 5px;
+                    color: black;
                 }
             }
         }
