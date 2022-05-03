@@ -6,8 +6,8 @@ footer {
 .parent {
     display: grid;
     grid-template-areas:
-        "a a a r"
-        "b b b r";
+        "a a b b"
+        "a a b b";
     width: 100%;
 }
 .div1 {
@@ -24,6 +24,9 @@ footer {
             border: 1px solid #00000012;
         }
     }
+}
+.color {
+    display: flex;
 }
 .medio-pago {
     font-weight: 600;
@@ -55,14 +58,57 @@ footer {
         }
     }
 }
+@media screen and (max-width: 1130px) {
+    .parent {
+    grid-template-areas: "a a" "b b" "r r";
+    }
+    
+    .div1 ul {
+    flex-direction: column;
+    }
+
+    .div3 ul {
+    flex-direction: column;
+    grid-area: r;
+    }
+}
 .facebook {
-    width: 35%;
+    position: fixed;
+    right: 110px;
+    bottom: 50px;
+    width: 3%;
 }
 .instagram {
-    width: 35%;
+    position: fixed;
+    right: 60px;
+    bottom: 50px;
+    width: 3%;
 }
 .whatsapp {
-    width: 35%;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 3%;
+}
+@media screen and (max-width: 650px) {
+    .facebook {
+    position: fixed;
+    right: 80px;
+    bottom: 50px;
+    width: 5%;
+    }
+    .instagram {
+    position: fixed;
+    right: 45px;
+    bottom: 50px;
+    width: 5%;
+    }
+    .whatsapp {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 5%;
+    }
 }
 .div3 {
     grid-area: b;
@@ -137,14 +183,14 @@ footer {
 }
 .oca {
     width: auto;
-    height: 65px;
+    height: 45px;
 }
 .andreani {
     width: auto;
-    height: 55px;
+    height: 45px;
 }
 .correo {
     width: auto;
-    height: 55px;
+    height: 45px;
 }
 /* Fin medios de pago y envios img */

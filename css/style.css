@@ -19,7 +19,9 @@ html {
 /* Fin body */
 /* Header */
 header {
-  background-color: #2ECC71;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 header nav ul li {
   padding: 8px 12px;
@@ -32,13 +34,16 @@ header nav ul li :hover {
   color: black;
 }
 
-.container-logo {
-  display: flex;
+.image-resposive {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
 }
 
 .image {
-  width: 10%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-encabezado {
@@ -47,6 +52,7 @@ header nav ul li :hover {
   justify-content: center;
   align-items: center;
   margin-bottom: inherit;
+  background-color: #2ECC71;
 }
 
 .encabezado {
@@ -57,8 +63,9 @@ header nav ul li :hover {
   font-weight: bold;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 2rem;
-  padding: 3%;
+  padding: 0;
   flex-flow: row wrap;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 1024px) {
   .encabezado .encabezado {
@@ -86,7 +93,7 @@ header nav ul li :hover {
   justify-content: space-between;
   flex-direction: column;
   background-color: rgba(46, 204, 113, 0.33);
-  width: 70%;
+  width: 50%;
 }
 
 .beneficios {
@@ -113,7 +120,7 @@ header nav ul li :hover {
 }
 
 .inicio {
-  width: 30%;
+  width: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -131,6 +138,10 @@ header nav ul li :hover {
 }
 
 /* Bootstrap productos */
+#cards {
+  padding: 130px;
+}
+
 .card {
   background: linear-gradient(145deg, rgba(146, 145, 143, 0.9725490196), #ffffff);
   box-shadow: 9.91px 9.91px 15px #d1d2d3, -9.91px -9.91px 15px #fff;
@@ -201,7 +212,7 @@ footer {
 
 .parent {
   display: grid;
-  grid-template-areas: "a a a r" "b b b r";
+  grid-template-areas: "a a b b" "a a b b";
   width: 100%;
 }
 
@@ -216,6 +227,10 @@ footer {
   align-items: center;
   margin: 0 5px 5px 0;
   border: 1px solid rgba(0, 0, 0, 0.0705882353);
+}
+
+.color {
+  display: flex;
 }
 
 .medio-pago {
@@ -247,18 +262,63 @@ footer {
   color: black;
 }
 
+@media screen and (max-width: 1130px) {
+  .parent {
+    grid-template-areas: "a a" "b b" "r r";
+  }
+
+  .div1 ul {
+    flex-direction: column;
+  }
+
+  .div3 ul {
+    flex-direction: column;
+    grid-area: r;
+  }
+}
 .facebook {
-  width: 35%;
+  position: fixed;
+  right: 110px;
+  bottom: 50px;
+  width: 3%;
 }
 
 .instagram {
-  width: 35%;
+  position: fixed;
+  right: 60px;
+  bottom: 50px;
+  width: 3%;
 }
 
 .whatsapp {
-  width: 35%;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  width: 3%;
 }
 
+@media screen and (max-width: 650px) {
+  .facebook {
+    position: fixed;
+    right: 80px;
+    bottom: 50px;
+    width: 5%;
+  }
+
+  .instagram {
+    position: fixed;
+    right: 45px;
+    bottom: 50px;
+    width: 5%;
+  }
+
+  .whatsapp {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 5%;
+  }
+}
 .div3 {
   grid-area: b;
 }
@@ -339,17 +399,17 @@ footer {
 
 .oca {
   width: auto;
-  height: 65px;
+  height: 45px;
 }
 
 .andreani {
   width: auto;
-  height: 55px;
+  height: 45px;
 }
 
 .correo {
   width: auto;
-  height: 55px;
+  height: 45px;
 }
 
 /* Fin medios de pago y envios img */

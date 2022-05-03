@@ -1,6 +1,8 @@
 /* Header */
 header {
-    background-color: #2ECC71;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
 
     nav {
         ul {
@@ -18,12 +20,15 @@ header {
         }
     }
 }
-.container-logo {
-    display: flex;
+.image-resposive {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
 }
 .image {
-    width: 10%;
-    height: auto;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
 }
 .container-encabezado {
     width: 100%;
@@ -31,6 +36,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: inherit;
+    background-color: #2ECC71;
 }
 .encabezado {
     display: flex;
@@ -40,8 +46,9 @@ header {
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2rem;
-    padding: 3%;
+    padding: 0;
     flex-flow: row wrap;
+    margin-bottom: 0;
 
     @media screen and (max-width: 1024px) {
         .encabezado {
